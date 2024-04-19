@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="Calculator">
+        <input type="text" placeholder="0" id="inputbox">
+
+        <div>
+            <button class="nonsymbolbtn" onclick="inputbox.value = '' ">AC</button>
+            <button class="nonsymbolbtn" onclick="inputbox.value = inputbox.value.toString().slice(0,-1)">DEL</button>
+            <button class="symbols" onclick="inputbox.value += '%' ">%</button>
+            <button class="symbols" onclick="inputbox.value += '/' ">/</button>
+        </div>
+
+        <div>
+            <button onclick="inputbox.value += '7' ">7</button>
+            <button onclick="inputbox.value += '8' ">8</button>
+            <button onclick="inputbox.value += '9' ">9</button>
+            <button class="symbols" onclick="inputbox.value += '*' ">*</button>
+        </div>
+
+        <div>
+            <button onclick="inputbox.value += '4' ">4</button>
+            <button onclick="inputbox.value += '5' ">5</button>
+            <button onclick="inputbox.value += '6' ">6</button>
+            <button class="symbols" onclick="inputbox.value += '-' ">-</button>
+        </div>
+
+        <div>
+            <button onclick="inputbox.value += '1' ">1</button>
+            <button onclick="inputbox.value += '2' ">2</button>
+            <button onclick="inputbox.value += '3' ">3</button>
+            <button class="symbols" onclick="inputbox.value += '+' ">+</button>
+        </div>
+
+        <div>
+            <button onclick="inputbox.value += '00' ">00</button>
+            <button onclick="inputbox.value += '0' ">0</button>
+            <button id="dot" class="symbols" onclick="inputbox.value += '.' ">.</button>
+            <button id="Equalbtn" onclick="inputbox.value = eval(inputbox.value)">=</button>
+        </div>
+        
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
