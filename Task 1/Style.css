@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    padding:10px;
+    padding-left: 5%;
+    background-color: black;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+table{
+    
+    margin-left:38% ;
+    margin-top: 3%;
+    text-align: center;
+    border-collapse: collapse;
+    width: 25%;
+    height: 200px;
+    background-color: #f3f4f6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    
+}
+table a:hover{
+    color: red;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+table,td,th{
+   border: 1px solid black;
+}
+.para{
+    text-align: center;
+    padding-top: 30px;
+    font-size: large;
+}
+.sec{
+    padding: 10px 5%;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.product .mainbox{
+    width: 250px;
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.product .mainbox img{
+    height: 250px;
+    width: 100%;
+}
+.product .mainbox .tittle{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    text-align: center;
+}
+.product .mainbox .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.product .mainbox .box .price{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product .mainbox .box .btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+.product .mainbox .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+#returnbtn a{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 100%;
+    border: 2px solid blue;
+    background-color: white;
+    color: blue;
+    
+}
+#returnbtn a:hover{
+    background-color: blue;
+    color: white;
+}
+h3{
+    padding:10px;
+    padding-left: 5%;
+    text-align: center;
+    background-color: pink;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: black;
+}
